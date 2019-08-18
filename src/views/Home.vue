@@ -38,7 +38,9 @@ export default {
     methods:{
         ...mapActions([]),
     }, 
-    computed:mapGetters(["allUsers"])
+    computed:{
+        ...mapGetters(["allUsers"]),
+    }
 }
 </script>
 

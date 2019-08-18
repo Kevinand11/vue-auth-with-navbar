@@ -2,7 +2,8 @@
     <div class="row my-3">
         <div class="col-md-6 offset-md-3">
             <div class="card">
-                    <div class="card-body">
+                <div class="card-body">
+                    <form @submit.prevent="loginUser">
                         <h3 class="text-center my-1">Login</h3>
                         <div class="form-group">
                             <input type="text" placeholder="Email" class="form-control" v-model="email" :class="{ 'is-valid': isValidE && isSubmitted,'is-invalid':!isValidE}">
@@ -15,7 +16,9 @@
                         <div class="form-group text-center">
                             <button class="btn form-control btn-success" @click="loginUser">Login</button>
                         </div>
-                    </div>
+                        <router-link to='/signup'>No account? Sign up</router-link>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

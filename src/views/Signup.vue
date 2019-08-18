@@ -23,6 +23,7 @@
                          <div class="form-group text-center">
                               <button class="btn form-control btn-success" @click="registerUser">Signup</button>
                          </div>
+                         <router-link to='/login'>Have an account already? Login</router-link>
                     </div>
                </div>
           </div>

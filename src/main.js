@@ -10,7 +10,7 @@ import "fontawesome/js/all";
 import "fontawesome/css/all.css";
 
 Vue.config.productionTip = false;
-Vue.use(VueSession);
+Vue.use(VueSession, { persist: true });
 
 new Vue({
     router,
